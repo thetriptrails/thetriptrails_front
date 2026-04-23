@@ -5,13 +5,13 @@ export const contactDetails = [
   {
     icon: Phone,
     title: "Call Us",
-    info: "+91 98765 43210",
+    info: "+91 95822 15091",
     color: "bg-blue-600"
   },
   {
     icon: Mail,
     title: "Email Us",
-    info: "info@uttarakhandtours.com",
+    info: "info@thetriptrails.com",
     color: "bg-[#C69E3D]"
   },
   {

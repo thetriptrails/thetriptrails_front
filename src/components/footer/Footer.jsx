@@ -11,23 +11,23 @@ const QUICK_LINKS = [
 ];
 
 const DESTINATIONS = [
-  { label: "Kedarnath", href: "#" },
-  { label: "Badrinath", href: "#" },
-  { label: "Nainital", href: "#" },
-  { label: "Rishikesh", href: "#" },
-  { label: "Mussoorie", href: "#" },
-  { label: "Jim Corbett", href: "#" },
+  { label: "Kedarnath", href: "/" },
+  { label: "Badrinath", href: "/" },
+  { label: "Nainital", href: "/" },
+  { label: "Rishikesh", href: "/" },
+  { label: "Mussoorie", href: "/" },
+  { label: "Jim Corbett", href: "/" },
 ];
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  const brandGold = "#BFA13B"; 
+  const brandGold = "#BFA13B";
   const brandDark = "#8e7421";
 
   return (
-    <footer 
-      className="w-full border-t border-white/10 font-sans relative overflow-hidden" 
-      style={{ backgroundColor: "#0a0a0a" }} 
+    <footer
+      className="w-full border-t border-white/10 font-sans relative overflow-hidden"
+      style={{ backgroundColor: "#0a0a0a" }}
     >
       {/* Top Gold Line */}
       <div
@@ -48,11 +48,11 @@ export default function Footer() {
                 className="h-24 md:h-20 w-auto object-contain self-start drop-shadow-[0_0_15px_rgba(191,161,59,0.3)]"
               />
               <p className="text-gray-400 text-sm leading-relaxed max-w-sm">
-                Your premium travel partner for exploring the incredible diversity of India. 
+                Your premium travel partner for exploring the incredible diversity of India.
                 From the Himalayas to the backwaters, we create unforgettable journeys since 2009.
               </p>
             </div>
-            
+
             <div className="flex gap-4">
               {[Facebook, Instagram, Twitter, Youtube].map((Icon, i) => (
                 <a
@@ -125,14 +125,14 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-4">
                 <Phone className="shrink-0" size={20} style={{ color: brandGold }} />
-                <a href="tel:+919876543210" className="text-gray-400 text-[13px] hover:text-white transition-colors">
-                  +91 98765 43210
+                <a href="tel:+919582215091" className="text-gray-400 text-[13px] hover:text-white transition-colors">
+                  +91 95822 15091
                 </a>
               </li>
               <li className="flex items-center gap-4">
                 <Mail className="shrink-0" size={20} style={{ color: brandGold }} />
-                <a href="mailto:info@uttarakhandtours.com" className="text-gray-400 text-[13px] hover:text-white transition-colors truncate">
-                  info@uttarakhandtours.com
+                <a href="mailto:info@thetriptrails.com" className="text-gray-400 text-[13px] hover:text-white transition-colors truncate">
+                  info@thetriptrails.com
                 </a>
               </li>
             </ul>
