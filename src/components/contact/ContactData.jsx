@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MessageSquare } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 
 export const contactDetails = [
   {
@@ -15,9 +15,13 @@ export const contactDetails = [
     color: "bg-[#C69E3D]"
   },
   {
-    icon: MessageSquare,
-    title: "Live Chat",
-    info: "Available 24/7",
-    color: "bg-cyan-600"
+    icon: MapPin,
+    title: "Our Offices",
+    info: "Uttarakhand & Gurugram",
+    color: "bg-emerald-600",
+    details: [
+      "Uttarakhand: Himmatpur Block, Near Sai Mandir, Jim Corbett, Ramnagar, 244715",
+      "Gurugram: Mistily No - 45, Killa No 6/2, Begampur Khatola, 122001"
+    ]
   }
 ];

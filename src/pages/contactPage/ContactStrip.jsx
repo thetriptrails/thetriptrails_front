@@ -7,17 +7,17 @@ const items = [
   {
     icon: Phone,
     label: "Speak with us",
-    value: "+91 98765 43210",
+    value: "+91 95822 15091",
   },
   {
     icon: Mail,
     label: "General Inquiry",
-    value: "info@uttaravista.com",
+    value: "info@thetriptrails.com",
   },
   {
     icon: MapPin,
     label: "Local Office",
-    value: "Dehradun, UK",
+    value: "Ramnagar, Uttarakhand",
   },
 ];
 
