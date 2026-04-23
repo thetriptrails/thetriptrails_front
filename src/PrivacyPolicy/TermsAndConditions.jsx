@@ -26,10 +26,11 @@ const TermsAndConditions = () => {
     },
     list: {
       paddingLeft: '20px',
-      marginBottom: '20px'
+      marginBottom: '20px',
+      listStyleType: 'none'
     },
     item: {
-      marginBottom: '10px'
+      marginBottom: '15px'
     }
   };
 
@@ -39,7 +40,7 @@ const TermsAndConditions = () => {
     { title: "Identity Proof", desc: "Please carry a valid identity proof with a photograph, as it is required at airports and during hotel check-ins." },
     { title: "Early Check-in and Late Checkout", desc: "Payments for early check-in and late checkout are to be settled directly with the hotel." },
     { title: "Alternative Arrangements", desc: "If the original hotels are unavailable, we will provide equivalent or alternative accommodations." },
-    { title: "Additional Charges", desc: "uttrakhandyatra.com does not have hidden charges, except for lunch and personal expenses. If anyone demands extra payment during the journey without our consent, please inform us." },
+    { title: "Additional Charges", desc: "Trip Trails does not have hidden charges, except for lunch and personal expenses. If anyone demands extra payment during the journey without our consent, please inform us." },
     { title: "Refund Policy", desc: "No refunds will be provided for unused accommodation, missed meals, transportation, sightseeing tours, or other services due to bad weather, illness, strikes, roadblocks, or natural calamities beyond our control." },
     { title: "Booking Verification", desc: "Before confirming your booking, please personally check the hotel websites, reviews, and services on the internet. We have provided the hotel names by destination. If the provided hotels are unsuitable, please request upgraded options." },
     { title: "Customer Support", desc: "If you encounter any issues with your hotels or transportation during your travel, please contact your tour executive immediately for resolution. We cannot address complaints after you return home, and no compensation will be provided for accommodation, meals, or transport costs." },
@@ -50,12 +51,12 @@ const TermsAndConditions = () => {
 
   return (
     <div style={styles.container}>
-      <h1 style={styles.header}>Terms & Conditions</h1>
+      <h1 style={styles.header}>Terms & Conditions - Trip Trails</h1>
       
       <ul style={styles.list}>
         {terms.map((term, index) => (
           <li key={index} style={styles.item}>
-            <span style={styles.sectionTitle}>{term.title}</span>
+            <span style={styles.sectionTitle}>{index + 1}. {term.title}</span>
             {term.desc}
           </li>
         ))}

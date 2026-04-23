@@ -39,14 +39,14 @@ const PrivacyPolicy = () => {
 
   return (
     <div style={styles.container}>
-      <h1 style={styles.header}>Privacy & Policy</h1>
+      <h1 style={styles.header}>Privacy Policy</h1>
       
       <p>
-        At <strong>Uttarakhand Yatra</strong>, we are committed to protecting the privacy and personal information of all pilgrims and travelers. This Privacy Policy explains how we collect, use, and protect your data. 
+        At <strong>Trip Trails</strong>, we are committed to protecting the privacy and personal information of all travelers. This Privacy Policy explains how we collect, use, and protect your data. 
       </p>
 
       <div style={styles.highlightBox}>
-        When you register with Uttarakhand Yatra, our executive will contact you to confirm your details (Name, Email Address, Contact Number) and gather information about your travel dates, group size, and hotel preferences based on your budget. This allows us to customize your package according to your requirements.
+        When you register with Trip Trails, our executive will contact you to confirm your details (Name, Email Address, Contact Number) and gather information about your travel dates, group size, and hotel preferences based on your budget. This allows us to customize your package according to your requirements.
       </div>
 
       <h2 style={styles.subHeader}>1. Information Collection</h2>
@@ -55,7 +55,7 @@ const PrivacyPolicy = () => {
       <h2 style={styles.subHeader}>2. Usage of Information</h2>
       <p>Your data is used solely for the following purposes:</p>
       <ul>
-        <li>Facilitating travel and pilgrimage arrangements</li>
+        <li>Facilitating travel arrangements</li>
         <li>Providing important updates and alerts</li>
         <li>Ensuring security and emergency support</li>
         <li>Fulfilling legal or regulatory requirements</li>
@@ -67,7 +67,7 @@ const PrivacyPolicy = () => {
       <h2 style={styles.subHeader}>4. Data Sharing</h2>
       <p>We do not sell or rent your data. Information may be shared only with:</p>
       <ul>
-        <li>Authorized Uttarakhand government departments</li>
+        <li>Authorized government departments (where applicable)</li>
         <li>Verified travel partners and emergency services</li>
         <li>When required by law</li>
       </ul>
@@ -85,14 +85,14 @@ const PrivacyPolicy = () => {
       <h2 style={styles.subHeader}>Rates & Flexibility</h2>
       <div style={styles.highlightBox}>
         <ul>
-          <li><strong>Rate Flexibility:</strong> All rates offered by Uttarakhand Yatra are subject to change without prior notice and are subject to availability.</li>
-          <li><strong>Transportation:</strong> Train, flight, and Volvo ticket availability is subject to change at the time of booking.</li>
+          <li><strong>Rate Flexibility:</strong> All rates offered by Trip Trails are subject to change without prior notice and are subject to availability.</li>
+          <li><strong>Transportation:</strong> Train, flight, and bus ticket availability is subject to change at the time of booking.</li>
           <li><strong>Flight Tickets:</strong> Quoted rates for flight tickets are flexible and may vary at the time of booking.</li>
         </ul>
       </div>
 
       <p>
-        For inquiries, contact us at <a href="mailto:sales@uttrakhandyatra.com" style={styles.contactLink}>sales@uttrakhandyatra.com</a>.
+        For inquiries, contact us at <a href="mailto:info@thetriptrails.com" style={styles.contactLink}>info@thetriptrails.com</a>.
       </p>
     </div>
   );

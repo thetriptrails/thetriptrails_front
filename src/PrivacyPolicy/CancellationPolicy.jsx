@@ -35,7 +35,7 @@ const CancellationPolicy = () => {
 
   return (
     <div style={styles.container}>
-      <h1 style={styles.header}>Cancellation Policy</h1>
+      <h1 style={styles.header}>Cancellation Policy - Trip Trails</h1>
       
       <p>We strive to process refunds promptly and fairly. Please read our refund policy below:</p>
 
@@ -53,12 +53,12 @@ const CancellationPolicy = () => {
         <li><strong>Train and Flight Tickets:</strong> Cancellation follows Indian Railway and Airline rules. Refunds are processed only after receiving the refund from the respective companies.</li>
         <li><strong>Exceptions:</strong> No refund will be provided in cases of bad weather, landslides, natural disasters, terrorism, or other events beyond our control. We will assist to the best of our ability in such situations.</li>
         <li><strong>Pandemic/Outbreak:</strong> There will be no refunds due to any pandemic or virus outbreak. In such situations, we can amend your travel date for a future booking.</li>
-        <li><strong>Loss of Belongings:</strong> uttrakhandyatra.com is not responsible for any lost items such as bags, wallets, jewelry, or other valuables during your trip.</li>
+        <li><strong>Loss of Belongings:</strong> Trip Trails is not responsible for any lost items such as bags, wallets, jewelry, or other valuables during your trip.</li>
       </ul>
 
       <div style={styles.highlightBox}>
         <span style={styles.sectionTitle}>Cancellation & Amendment Procedure</span>
-        <p>All cancellations and amendments to the original booking must be <strong>communicated in writing via email</strong>.</p>
+        <p>All cancellations and amendments to the original booking must be <strong>communicated in writing via email</strong> at info@thetriptrails.com.</p>
         <small>*All policies are subject to the rules of the respective hotels and service providers.</small>
       </div>
     </div>
