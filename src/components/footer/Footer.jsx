@@ -129,7 +129,7 @@ export default function Footer() {
                   <div>
                     <p className="text-white text-[12px] font-bold mb-0.5">Gurugram Office:</p>
                     <span className="text-gray-400 text-[13px] leading-relaxed">
-                      Mistily No - 45, Killa No 6/2, Begampur Khatola, 122001
+                      Mustil No - 45, Killa No 6/2, Begampur Khatola, Gurugram, Haryana - 122001
                     </span>
                   </div>
                 </div>

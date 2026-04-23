@@ -25,7 +25,7 @@ const infoCards = [
     isAddress: true,
     locations: [
       { city: "Uttarakhand", address: "Himmatpur Block, Near Sai Mandir, Jim Corbett, Ramnagar, 244715" },
-      { city: "Gurugram", address: "Mistily No - 45, Killa No 6/2, Begampur Khatola, 122001" }
+      { city: "Gurugram", address: "Mustil No - 45, Killa No 6/2, Begampur Khatola, Gurugram, Haryana - 122001" }
     ]
   },
 ];
