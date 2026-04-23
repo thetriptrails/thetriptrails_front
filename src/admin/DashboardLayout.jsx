@@ -2,7 +2,7 @@ import { useState, useMemo } from "react";
 import { useNavigate, useLocation, Outlet, Link } from "react-router-dom";
 import {
   FiHome, FiLayers, FiBriefcase, FiFileText,
-  FiUser, FiLogOut, FiMenu, FiX, FiSearch, FiBell
+  FiUser, FiLogOut, FiMenu, FiX, FiSearch, FiBell, FiMapPin, FiMessageSquare
 } from "react-icons/fi";
 
 import { logoutUser } from "../services/auth.service";
@@ -19,11 +19,12 @@ const DashboardLayout = () => {
   const location = useLocation();
 
   const menuItems = useMemo(() => [
-    { icon: <FiHome />, label: "Destinations", path: "/admin/destinations" },
+    { icon: <FiHome />, label: "Dashboard", path: "/admin" },
+    { icon: <FiMapPin />, label: "Destinations", path: "/admin/destinations" },
     { icon: <FiLayers />, label: "Packages", path: "/admin/packages" },
     { icon: <FiBriefcase />, label: "Services", path: "/admin/services" },
     { icon: <FiFileText />, label: "Blogs", path: "/admin/posts" },
-    { icon: <FiFileText />, label: "Testimonials", path: "/admin/testimonials" },
+    { icon: <FiMessageSquare />, label: "Testimonials", path: "/admin/testimonials" },
     { icon: <FiUser />, label: "Profile", path: "/admin/profile" },
   ], []);
 

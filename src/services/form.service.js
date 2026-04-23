@@ -27,3 +27,21 @@ export const submitEnquiry = async (data) => {
     };
   }
 };
+
+export const getAllEnquiries = async () => {
+  try {
+    const res = await api.get(API.ENQUIRY.GET_ALL);
+    return res.data;
+  } catch (error) {
+    throw error.response?.data || { message: "Failed to fetch enquiries" };
+  }
+};
+
+export const updateEnquiryStatus = async (id, status) => {
+  try {
+    const res = await api.patch(API.ENQUIRY.UPDATE_STATUS(id), { status });
+    return res.data;
+  } catch (error) {
+    throw error.response?.data || { message: "Failed to update status" };
+  }
+};

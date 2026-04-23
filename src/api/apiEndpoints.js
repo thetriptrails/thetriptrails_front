@@ -7,6 +7,8 @@ const API_ENDPOINTS = {
   
   ENQUIRY: {
     SUBMIT: `${BASE_URL}/enquiries/submit`,
+    GET_ALL: `${BASE_URL}/enquiries/all`,
+    UPDATE_STATUS: (id) => `${BASE_URL}/enquiries/status/${id}`,
   },
 
   AUTH: {
