@@ -119,9 +119,20 @@ export default function Footer() {
             <ul className="space-y-6">
               <li className="flex items-start gap-4">
                 <MapPin className="shrink-0 mt-1" size={20} style={{ color: brandGold }} />
-                <span className="text-gray-400 text-[13px] leading-relaxed">
-                  123 Mall Road, Dehradun, Uttarakhand 248001, India
-                </span>
+                <div className="flex flex-col gap-3">
+                  <div>
+                    <p className="text-white text-[12px] font-bold mb-0.5">Uttarakhand Office:</p>
+                    <span className="text-gray-400 text-[13px] leading-relaxed">
+                      Himmatpur Block, Near Sai Mandir, Jim Corbett, Ramnagar, 244715
+                    </span>
+                  </div>
+                  <div>
+                    <p className="text-white text-[12px] font-bold mb-0.5">Gurugram Office:</p>
+                    <span className="text-gray-400 text-[13px] leading-relaxed">
+                      Mistily No - 45, Killa No 6/2, Begampur Khatola, 122001
+                    </span>
+                  </div>
+                </div>
               </li>
               <li className="flex items-center gap-4">
                 <Phone className="shrink-0" size={20} style={{ color: brandGold }} />
