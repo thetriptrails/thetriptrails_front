@@ -189,7 +189,7 @@ export default function DestinationForm({ initialData, onSuccess }) {
         </div>
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         <div>
           <label style={labelStyle}>Category</label>
           <input
@@ -211,12 +211,26 @@ export default function DestinationForm({ initialData, onSuccess }) {
             onChange={(e) => set("experience", e.target.value)}
           />
         </div>
+        <div>
+          <label style={labelStyle}>Region</label>
+          <input
+            style={inputStyle}
+            type="text"
+            placeholder="e.g. North India"
+            value={formData.region}
+            onChange={(e) => set("region", e.target.value)}
+          />
+        </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div>
           <label style={labelStyle}>Capacity (People)</label>
           <input type="number" min="0" style={inputStyle} value={formData.noOfPerson} onChange={(e) => set("noOfPerson", e.target.value)} />
+        </div>
+        <div>
+          <label style={labelStyle}>Rating</label>
+          <input type="number" min="0" max="5" step="0.1" style={inputStyle} value={formData.rating} onChange={(e) => set("rating", e.target.value)} />
         </div>
         <div>
           <label style={labelStyle}>Altitude</label>
@@ -249,8 +263,7 @@ export default function DestinationForm({ initialData, onSuccess }) {
           <label style={labelStyle}>Travel Date</label>
           <input
             style={inputStyle}
-            type="text"
-            placeholder="dd-mm-yyyy"
+            type="date"
             value={formData.travelDate}
             onChange={(e) => set("travelDate", e.target.value)}
             onFocus={handleFocus} onBlur={handleBlur}
