@@ -15,7 +15,6 @@ const Packages = lazy(() => import("./pages/packagesPage/Packages"));
 const Contact = lazy(() => import("./pages/contactPage/Contact"));
 const Blog = lazy(() => import("./pages/blogPage/Blog"));
 const Login = lazy(() => import("./auth/Login"));
-const Register = lazy(() => import("./auth/Register"));
 const Forgot = lazy(() => import("./auth/Forgot"));
 const Reset = lazy(() => import("./auth/Reset"));
 const DashboardLayout = lazy(() => import("./admin/DashboardLayout"));
@@ -84,7 +83,6 @@ function App() {
 
           {/* 🔐 AUTH */}
           <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
           <Route path="/forgot" element={<Forgot />} />
           <Route path="/reset" element={<Reset />} />
 
