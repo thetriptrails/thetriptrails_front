@@ -144,15 +144,7 @@ const Login = () => {
           )}
         </div>
 
-        {/* FOOTER */}
-        <div className="py-5 bg-stone-50 border-t border-stone-100 text-center">
-          <p className="text-stone-400 text-[10px] font-medium uppercase tracking-tight">
-            New user?{" "}
-            <Link to="/register" className="font-bold ml-1" style={{ color: GOLD }}>
-              Request Access
-            </Link>
-          </p>
-        </div>
+
       </div>
     </div>
   );

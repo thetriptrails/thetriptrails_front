@@ -23,7 +23,9 @@ const PublicLayout = () => {
         onClose={() => setIsModalOpen(false)} 
       />
       <Navbar />
-      <Outlet />
+      <React.Suspense fallback={<div className="min-h-[70vh] w-full bg-[#FCFBFA]"></div>}>
+        <Outlet />
+      </React.Suspense>
       <Footer />
     </>
   );
