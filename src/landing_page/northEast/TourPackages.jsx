@@ -58,7 +58,7 @@ const TourPackages = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-gray-900 mt-3">
-            Discover Your Perfect <span className="text-[#D4AF37]">North East Journey</span>
+            Discover Your Perfect <span className="text-[#D4AF37]">North East Packages</span>
           </h2>
           <div className="w-24 h-1 bg-[#D4AF37] mx-auto mt-6"></div>
         </div>

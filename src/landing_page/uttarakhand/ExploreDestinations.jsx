@@ -38,7 +38,7 @@ const ExploreDestinations = () => {
         {/* Responsive Header */}
         <div className="text-left mb-8 md:mb-12 border-l-4 border-[#C9A84C] pl-4 md:pl-6">
           <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-serif font-bold text-gray-900 leading-tight md:leading-none">
-            Discover Your Perfect <span className="text-[#C9A84C] italic">Uttarakhand Journey</span>
+            Discover Your Perfect <span className="text-[#C9A84C] italic">Uttarakhand Destinations</span>
           </h2>
         </div>
 
