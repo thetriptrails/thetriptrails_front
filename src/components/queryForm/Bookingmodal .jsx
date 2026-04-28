@@ -46,8 +46,11 @@ export default function BookingModal({
   const [errors, setErrors] = useState({});
 
   useEffect(() => {
-    if (isOpen) document.body.style.overflow = "hidden";
-    else document.body.style.overflow = "unset";
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
   }, [isOpen]);
 
   const change = (e) => {
@@ -75,17 +78,18 @@ export default function BookingModal({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-2 bg-black/50 backdrop-blur-[2px]">
-      <div className="w-full max-w-sm bg-white rounded-xl shadow-2xl relative flex flex-col max-h-[90vh] overflow-hidden">
+    /* Changed z-9999 to z-[9999] for standard Tailwind arbitrary value parsing */
+    <div className="fixed inset-0 z-9999 flex items-center justify-center p-4 bg-black/50 backdrop-blur-[2px] overflow-y-auto">
+      <div className="w-full max-w-sm bg-white rounded-xl shadow-2xl flex flex-col my-auto" onClick={(e) => e.stopPropagation()}>
         
         {/* Header - Compact */}
-        <div className="px-4 py-3 bg-stone-50 border-b border-stone-100 text-center shrink-0">
-          <button onClick={onClose} className="absolute top-3 right-3 text-stone-400">✕</button>
+        <div className="px-4 py-3 bg-stone-50 border-b border-stone-100 text-center shrink-0 relative">
+          <button onClick={onClose} className="absolute top-3 right-3 text-stone-400 hover:text-stone-600 p-1">✕</button>
           <h2 className="text-base font-bold text-stone-800">{title}</h2>
           <p className="text-stone-400 text-[10px]">{subtitle}</p>
         </div>
 
-        <div className="p-4 overflow-y-auto">
+        <div className="p-4">
           {submitted ? (
             <div className="py-6 text-center">✓ <p className="text-sm font-bold mt-2">Inquiry Sent!</p></div>
           ) : (
