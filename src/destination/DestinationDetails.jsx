@@ -209,11 +209,11 @@ export default function DestinationDetails() {
               <div className="bg-gray-50 rounded-[2rem] p-8 flex flex-col items-center">
                  <p className="text-xs font-bold text-gray-900 mb-6 uppercase tracking-widest">Speak to our Specialists</p>
                  <div className="flex gap-4 w-full">
-                    <a href="tel:+919876543210" className="flex-1 p-4 rounded-2xl bg-white flex flex-col items-center gap-2 shadow-sm border border-gray-100 hover:border-[#C9A84C]/30 transition-colors">
+                    <a href="tel:+919582215091" className="flex-1 p-4 rounded-2xl bg-white flex flex-col items-center gap-2 shadow-sm border border-gray-100 hover:border-[#C9A84C]/30 transition-colors">
                        <Phone size={18} className="text-[#C9A84C]" />
                        <span className="text-[9px] font-bold uppercase text-gray-500 tracking-tighter">Call Now</span>
                     </a>
-                    <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer" className="flex-1 p-4 rounded-2xl bg-white flex flex-col items-center gap-2 shadow-sm border border-gray-100 hover:border-[#C9A84C]/30 transition-colors">
+                    <a href="https://wa.me/919582215091" target="_blank" rel="noreferrer" className="flex-1 p-4 rounded-2xl bg-white flex flex-col items-center gap-2 shadow-sm border border-gray-100 hover:border-[#C9A84C]/30 transition-colors">
                        <MessageCircle size={18} className="text-[#C9A84C]" />
                        <span className="text-[9px] font-bold uppercase text-gray-500 tracking-tighter">WhatsApp</span>
                     </a>
