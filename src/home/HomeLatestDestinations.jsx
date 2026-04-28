@@ -56,8 +56,10 @@ export default function HomeLatestDestinations() {
             >
               <div className="relative h-48 md:h-60 overflow-hidden">
                 <img 
-                  src={dest.image?.url || "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800"} 
+                  src={dest.image?.url ? dest.image.url.replace('/upload/', '/upload/f_auto,q_auto,w_800/') : "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800&auto=format&fit=crop"} 
                   alt={dest.name}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full flex items-center gap-1.5 shadow-sm border border-[#C9A84C]/20 text-[10px] font-bold text-gray-900">

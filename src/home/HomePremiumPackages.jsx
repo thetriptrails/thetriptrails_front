@@ -28,16 +28,10 @@ export default function HomePremiumPackages() {
     const fetchData = async () => {
       try {
         setIsLoading(true);
-        const response = await getAllPackages();
+        const response = await getAllPackages("?limit=3&sort=createdAt");
         
         if (response.success && Array.isArray(response.data)) {
-          // 1. Sort by createdAt descending (Latest first)
-          // 2. Take only the top 3
-          const latestThree = response.data
-            .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
-            .slice(0, 3);
-            
-          setPackages(latestThree);
+          setPackages(response.data);
         }
       } catch (error) {
         console.error("Failed to fetch packages:", error);
