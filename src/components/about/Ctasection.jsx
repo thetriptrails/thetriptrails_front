@@ -12,7 +12,7 @@ export default function CTASection() {
       
       {/* Subtle Depth Background */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#FAF9F6] via-white to-white"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-[#FAF9F6] via-white to-white"></div>
       </div>
 
       <div className="max-w-3xl mx-auto relative z-10 text-center">
@@ -30,7 +30,7 @@ export default function CTASection() {
 
         {/* Divider */}
         <div className="flex justify-center mb-4">
-          <div className="h-[1px] w-10 bg-black/10"></div>
+          <div className="h-px w-10 bg-black/10"></div>
         </div>
 
         {/* Description */}

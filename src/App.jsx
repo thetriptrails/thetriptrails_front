@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import ScrollToTop from "./layouts/ScrollToTop";
 
 import PublicLayout from "./layouts/PublicLayout";
 import ProtectedRoute from "./routes/ProtectedRoute";
@@ -35,16 +36,15 @@ import PrivacyPolicy from "./PrivacyPolicy/PrivacyPolicy";
 import TermsAndConditions from "./PrivacyPolicy/TermsAndConditions";
 import CancellationPolicy from "./PrivacyPolicy/CancellationPolicy";
 
-
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
-
         {/* 🌐 PUBLIC */}
         <Route element={<PublicLayout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/destinations" element={<Destination/>} />
+          <Route path="/destinations" element={<Destination />} />
           <Route path="/destinations/:id" element={<DestinationDetail />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
@@ -64,12 +64,18 @@ function App() {
           {/* Landing pages Routes*/}
           <Route path="/uttarakhand-tour-packages" element={<Uttarakhand />} />
           <Route path="/south-india-tour-packages" element={<SouthIndia />} />
-          <Route path="/north-east-india-tour-packages" element={<NorthEast />} />
+          <Route
+            path="/north-east-india-tour-packages"
+            element={<NorthEast />}
+          />
           <Route path="/andaman-tour-packages" element={<Andaman />} />
           <Route path="/goa-tour-packages" element={<Goa />} />
 
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+          <Route
+            path="/terms-and-conditions"
+            element={<TermsAndConditions />}
+          />
           <Route path="/cancellation-policy" element={<CancellationPolicy />} />
         </Route>
 
@@ -105,7 +111,6 @@ function App() {
 
         {/* 404 Catch-all: Redirects to home if route doesn't exist */}
         <Route path="*" element={<Navigate to="/" replace />} />
-
       </Routes>
     </BrowserRouter>
   );
