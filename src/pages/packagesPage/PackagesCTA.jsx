@@ -34,13 +34,6 @@ export default function PackagesCTA() {
           >
             Build Custom Plan
           </button>
-          
-          <button
-            onClick={() => navigate("/contact")}
-            className="px-8 py-4 text-sm font-bold uppercase tracking-widest rounded-full transition-all duration-300 border-2 border-white text-white hover:bg-white hover:text-[#C9A84C]"
-          >
-            Talk to Expert
-          </button>
         </div>
 
       </div>
